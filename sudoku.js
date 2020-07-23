@@ -45,9 +45,9 @@ for (var i = 0; i < 9; i++){
             }
         }
     }
-    cptzero = 0
+    cptzero = 0;
 }
-return tab
+return tab;
 }
 //------------------------------------------------FONCTION TEST SI UN SEUL TROU PAR COLONNE ET REMPLACEMENT SI OUI
 function testColonne(tab){
@@ -75,9 +75,9 @@ for (var i = 0; i < 9; i++){
             }
         }
     }
-    cptzero = 0
+    cptzero = 0;
 }
-return tab
+return tab;
 }
 //-----------------------------------------------------------------FONCTION TEST SI UN SEUL TROU PAR CARRE ET REMPLACEMENT SI OUI
 function testCarre (tab, ligne, colonne){
@@ -138,7 +138,7 @@ function testMix (tab){
         for (var j = 0; j < 9;j++){
 
             if (tab[i][j] == 0){
-                tabTest = [1,2,3,4,5,6,7,8,9]
+                tabTest = [1,2,3,4,5,6,7,8,9];
 //-----------------TEST LIGNE      
                 for (var c = 0; c < 9; c++){ //---Boucle ligne array
                     for (var cptTest = 0; cptTest < 9; cptTest++){ //---Boucle tableau Test
@@ -189,12 +189,6 @@ do {
     }
 
     array = testMix(array);
-
-    for (var i = 0; i < 9; i++){
-        for (var j = 0; j < 9; j++){
-            somme += array[i][j];
-        }
-    }
 
 } while (somme != 405);
 //--------------------------------------------------REFORMER GRILLE TXT DU TABLEAU REMPLI ET AFFICHER RESULTAT
